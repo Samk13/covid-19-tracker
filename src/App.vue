@@ -1,8 +1,8 @@
 <template>
-  <div class="container box-border m-auto w-full bg-gray-200">
-    <P class="p-5 text-5xl font-black text-center text-red-800">covid-19 Data visualization</P>
+  <div class="container box-border m-auto w-full bg-gray-200 font-body">
+    <P class="p-5 text-5xl font-body font-black  text-center text-red-800">covid-19 Data visualization in USA</P>
     <div class="mt-5" v-if="positiveCases.length > 0">
-      <h2 class="text-xl font-black">Registered Positive</h2>
+      <h2 class="text-xl font-black py-4">Registered Positive</h2>
       <div class="bg-gray-500 rounded-lg hover:shadow-md">
         <LineCharts
           :chartData="positiveCases"
@@ -15,7 +15,7 @@
       </div>
     </div>
     <div class="mt-5" v-if="hospitalization.length > 0">
-      <h2 class="text-xl font-black">hospitalization</h2>
+      <h2 class="text-xl font-black font-body py-4">hospitalization</h2>
       <div class="bg-gray-500 rounded-lg hover:shadow-md">
         <LineCharts
           :chartData="hospitalization"
@@ -28,7 +28,7 @@
       </div>
     </div>
     <div class="mt-5" v-if="inIcu.length > 0">
-      <h2 class="text-xl font-black">Under ICU</h2>
+      <h2 class="text-xl font-black py-4">Under ICU</h2>
       <div class="bg-gray-500 rounded-lg hover:shadow-md">
         <LineCharts
           :chartData="inIcu"
@@ -41,7 +41,7 @@
       </div>
     </div>
     <div class="mt-5" v-if="onVentilators.length > 0">
-      <h2 class="text-xl font-black">onVentilators</h2>
+      <h2 class="text-xl font-black py-4">onVentilators</h2>
       <div class="bg-gray-500 rounded-lg hover:shadow-md">
         <LineCharts
           :chartData="onVentilators"
@@ -54,7 +54,7 @@
       </div>
     </div>
     <div class="mt-5" v-if="recovered.length > 0">
-      <h2 class="text-xl font-black">recovered</h2>
+      <h2 class="text-xl font-black py-4">recovered</h2>
       <div class="bg-gray-500 rounded-lg hover:shadow-md">
         <LineCharts
           :chartData="recovered"
@@ -67,7 +67,7 @@
       </div>
     </div>
     <div class="mt-5" v-if="deaths.length > 0">
-      <h2 class="text-xl font-black">deaths</h2>
+      <h2 class="text-xl font-black py-4">deaths</h2>
       <div class="bg-gray-500 rounded-lg hover:shadow-md">
         <LineCharts
           :chartData="deaths"
