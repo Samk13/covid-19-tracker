@@ -1,6 +1,6 @@
 <template>
   <div class="container box-border m-auto w-full bg-gray-200 font-body">
-    <P class="p-5 text-5xl font-body font-black  text-center text-red-800">covid-19 Data visualization in USA</P>
+    <P class="p-5 text-5xl font-body font-black  text-center text-red-800">Covid-19 Data visualization in USA</P>
     <div class="mt-5" v-if="positiveCases.length > 0">
       <h2 class="text-xl font-black py-4">Registered Positive</h2>
       <div class="bg-gray-500 rounded-lg hover:shadow-md">
@@ -96,39 +96,38 @@ export default {
     return {
       positiveCases: [],
       positiveChartColors: {
-        borderColor:'#077187',
-        pointBorderColor:'#0E1428',
-        pointBackgroundColor:'#AFD6AC',
+        pointBorderColor:'#FFFFFF',
+        pointBackgroundColor:'#8d0801',
         backgroundColor:'#335c67'
       },
       hospitalizationChartColors: {
-        borderColor:'#077187',
+        borderColor:'#FFFFFF',
         pointBorderColor:'#0E1428',
-        pointBackgroundColor:'#AFD6AC',
+        pointBackgroundColor:'#8d0801',
         backgroundColor:'#708d81'
       },
       inIcuChartColors: {
-        borderColor:'#077187',
+        borderColor:'#FFFFFF',
         pointBorderColor:'#0E1428',
-        pointBackgroundColor:'#AFD6AC',
+        pointBackgroundColor:'#8d0801',
         backgroundColor:'#f4d58d'
       },
       onVentilatorsChartColors: {
-        borderColor:'#077187',
+        borderColor:'#FFFFFF',
         pointBorderColor:'#0E1428',
-        pointBackgroundColor:'#AFD6AC',
+        pointBackgroundColor:'#8d0801',
         backgroundColor:'#bf0603'
       },
       recoveredChartColors: {
-        borderColor:'#077187',
+        borderColor:'#FFFFFF',
         pointBorderColor:'#0E1428',
-        pointBackgroundColor:'#AFD6AC',
+        pointBackgroundColor:'#8d0801',
         backgroundColor:'#8d0801'
       },
       deathsChartColors: {
-        borderColor:'#077187',
+        borderColor:'#FFFFFF',
         pointBorderColor:'#0E1428',
-        pointBackgroundColor:'#AFD6AC',
+        pointBackgroundColor:'#8d0801',
         backgroundColor:'#343a40'
       },
       hospitalization: [],
