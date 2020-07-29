@@ -22,3 +22,10 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+
+TODO 
+change the api to 
+https://corona.lmao.ninja/v2/countries
+
+
